@@ -1,0 +1,83 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{listings}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{cite}
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+            
+        \Huge
+        \textbf{Taller Memoria}
+            
+        \vspace{0.5cm}
+        \LARGE
+        Subtítulo
+            
+        \vspace{1.5cm}
+            
+        \textbf{Santiago Montoya Leal}
+            
+        \vfill
+            
+        \vspace{0.8cm}
+            
+        \Large
+        Despartamento de Ingeniería Electrónica y Telecomunicaciones\\
+        Universidad de Antioquia\\
+        Medellín\\
+        Septiembre de 2020
+            
+    \end{center}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+\section{Introducción}\label{intro}
+En este documento trata sobre los tipos de memoria del computador y su funcionalidad con los cuales se busca responder el taller – nociones de la memoria del computador: ¿Qué es la memoria de un computador?, mencione los tipos de memoria que conoce y haga una pequeña descripción de cada tipo, describa la manera de cómo se gestiona la memoria de un computador y ¿Qué hace que la memoria sea más rápida que otra? ¿Porque esto es importante?
+
+\section{Preguntas del taller -nociones de memoria del computador} \label{contenido}
+En esta sección se busca responder las 4 preguntas que están en el taller de nociones de memoria del computador
+\subsection{Citación}
+Vamos a citar por ejemplo un artículo de \textbf{Albert Einstein} \cite{einstein}.
+También es posible citar libros \cite{dirac} o documentos en línea \cite{knuthwebsite}.\\\\
+Revisar en la última sección el formato de las referencias en IEEE.
+
+\subsection{Incluir código en el documento}
+%
+A continuación, se presenta el código \ref{codigo_ejemplo}, que nos permite incluir en el informe partes de código que requieran una explicación exhaustiva.
+\begin{lstlisting}[language=C++, caption=Ejemplo, label=codigo_ejemplo]
+#include <stdio.h>
+#define N 10
+/* Block
+ * comment */
+
+int main()
+{
+    int i;
+
+    // Line comment.
+    puts("Hello world!");
+    
+    for (i = 0; i < N; i++)
+    {
+        puts("LaTeX is also great for programmers!");
+    }
+
+    return 0;
+}
+\end{lstlisting}
+
+
+
+
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}
