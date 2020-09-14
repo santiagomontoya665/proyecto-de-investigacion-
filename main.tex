@@ -4,6 +4,14 @@
 \usepackage{listings}
 \usepackage{graphicx}
 \graphicspath{ {images/} }
+
+\catcode`\_=\active
+\def_{\_}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+
+% (3) load symbol definitions
+\usepackage{textcomp}
 \usepackage{cite}
 
 \begin{document}
@@ -80,7 +88,7 @@ Su funcionamiento es simple en esa memoria se guardan datos que el procesador va
 Es la memoria que en el momento que se ejecute algún programa guardara los datos que menos se utilizaran dentro del programa, para que no ocupen espacio en la RAM
 
 \subsubsection{Memoria ROM}
-Es una memoria  que viene por defecto en la mother board que guarda un comando llamado POST el cual le ordena al procesador que haga un chequeo de cada uno de los componentes del computador para el correcto arranque del sistema.\cite{referencia}
+Es una memoria  que viene por defecto en la mother board que guarda un comando llamado POST el cual le ordena al procesador que haga un chequeo de cada uno de los componentes del computador para el correcto arranque del sistema.\cite{Augusto}
 \subsection{Gestión de memoria}
 
 Las memorias del computador están dividas en celdas donde se guardan bits que componen los bytes de información con loa que los microprocesadores trabajan.
